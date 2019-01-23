@@ -1,0 +1,23 @@
+dependencies: \
+  /Users/saikham/workspace/reactNative/instagramClone/node_modules/react-native/React/Modules/RCTDevSettings.mm \
+  /Users/saikham/workspace/reactNative/instagramClone/node_modules/react-native/React/Modules/RCTDevSettings.h \
+  /Users/saikham/workspace/reactNative/instagramClone/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/saikham/workspace/reactNative/instagramClone/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/saikham/workspace/reactNative/instagramClone/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/saikham/workspace/reactNative/instagramClone/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/saikham/workspace/reactNative/instagramClone/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/saikham/workspace/reactNative/instagramClone/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/saikham/workspace/reactNative/instagramClone/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/saikham/workspace/reactNative/instagramClone/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JavaScriptCore.h \
+  /Users/saikham/workspace/reactNative/instagramClone/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JSCWrapper.h \
+  /Users/saikham/workspace/reactNative/instagramClone/node_modules/react-native/React/Base/RCTBridge+Private.h \
+  /Users/saikham/workspace/reactNative/instagramClone/node_modules/react-native/React/Base/RCTEventDispatcher.h \
+  /Users/saikham/workspace/reactNative/instagramClone/node_modules/react-native/React/Modules/RCTJSCSamplingProfiler.h \
+  /Users/saikham/workspace/reactNative/instagramClone/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/saikham/workspace/reactNative/instagramClone/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/saikham/workspace/reactNative/instagramClone/node_modules/react-native/React/Base/RCTUtils.h \
+  /Users/saikham/workspace/reactNative/instagramClone/node_modules/react-native/React/Profiler/RCTProfile.h \
+  /Users/saikham/workspace/reactNative/instagramClone/node_modules/react-native/React/DevSupport/RCTPackagerClient.h \
+  /Users/saikham/workspace/reactNative/instagramClone/node_modules/react-native/React/DevSupport/RCTPackagerConnection.h \
+  /Users/saikham/workspace/reactNative/instagramClone/node_modules/react-native/React/DevSupport/RCTInspectorDevServerHelper.h \
+  /Users/saikham/workspace/reactNative/instagramClone/node_modules/react-native/React/Inspector/RCTInspectorPackagerConnection.h
