@@ -11,6 +11,7 @@ import {
 } from "native-base";
 import Icon from "react-native-vector-icons/Ionicons";
 import Entypo from "react-native-vector-icons/Entypo";
+import CardComponent from "../CardComponent";
 
 const images = [
   require("../../../assets/feeds/1.jpg"),
@@ -21,10 +22,9 @@ const images = [
   require("../../../assets/feeds/6.jpg"),
   require("../../../assets/feeds/7.jpg"),
   require("../../../assets/feeds/8.jpg"),
-  require("../../../assets/feeds/9.jpg"),
-  require("../../../assets/feeds/10.jpg")
+  require("../../../assets/feeds/9.jpg")
 ];
-const { width, height } = Dimensions.get("window");
+const { width } = Dimensions.get("window");
 
 class ProfileScreen extends Component {
   state = {
@@ -46,7 +46,15 @@ class ProfileScreen extends Component {
   renderFeed = () => {
     return images.map((image, index) => {
       return (
-        <View key={index} style={{ width: width / 3, height: height / 3 }}>
+        <View
+          key={index}
+          style={[
+            { width: width / 3 },
+            { height: width / 3 },
+            { marginBottom: 2 },
+            index % 3 !== 0 ? { paddingLeft: 2 } : { paddingLeft: 0 }
+          ]}
+        >
           <Image
             source={image}
             style={{ flex: 1, width: undefined, height: undefined }}
@@ -61,7 +69,9 @@ class ProfileScreen extends Component {
       case 1:
         return (
           <View>
-            <Text>Second</Text>
+            <CardComponent imageSource="one" likes="101" />
+            <CardComponent imageSource="two" likes="201" />
+            <CardComponent imageSource="three" likes="301" />
           </View>
         );
       case 2:
