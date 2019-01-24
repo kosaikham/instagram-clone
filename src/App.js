@@ -76,13 +76,7 @@ const AppContainer = createAppContainer(
     Root: {
       screen: TabNav,
       navigationOptions: {
-        headerLeft: (
-          <Icon name="ios-camera" size={30} style={{ paddingLeft: 10 }} />
-        ),
-        title: "Instagram",
-        headerRight: (
-          <Icon name="ios-send" size={30} style={{ paddingRight: 10 }} />
-        )
+        header: null
       }
     }
   })

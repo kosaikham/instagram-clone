@@ -1,7 +1,15 @@
 import React, { Component } from "react";
 import { View, Text, StyleSheet } from "react-native";
 import Icon from "react-native-vector-icons/Ionicons";
-import { Container, Content, Thumbnail } from "native-base";
+import {
+  Container,
+  Content,
+  Thumbnail,
+  Header,
+  Left,
+  Right,
+  Body
+} from "native-base";
 import CardComponent from "../CardComponent";
 import { ScrollView } from "react-native-gesture-handler";
 
@@ -15,6 +23,17 @@ class HomeScreen extends Component {
   render() {
     return (
       <Container style={styles.containerStyle}>
+        <Header>
+          <Left>
+            <Icon name="ios-camera" size={30} style={{ paddingLeft: 10 }} />
+          </Left>
+          <Body>
+            <Text>Instagram</Text>
+          </Body>
+          <Right>
+            <Icon name="ios-send" size={30} style={{ paddingRight: 10 }} />
+          </Right>
+        </Header>
         <Content>
           <View style={{ height: 100 }}>
             <View
