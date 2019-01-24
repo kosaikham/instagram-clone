@@ -85,7 +85,7 @@ class HomeScreen extends Component {
                   }}
                 />
                 <Thumbnail
-                  source={require("../../../assets/profiles/4.png")}
+                  source={require("../../../assets/profiles/4.jpg")}
                   style={{
                     borderColor: "pink",
                     marginHorizontal: 5,
