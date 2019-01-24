@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, Text, Image, Dimensions } from "react-native";
+import { View, Text, Image, Dimensions, Platform, StatusBar } from "react-native";
 import {
   Container,
   Header,
@@ -99,11 +99,11 @@ class ProfileScreen extends Component {
   render() {
     return (
       <Container style={styles.containerStyle}>
-        <Header>
+        <Header style={styles.androidHeader}>
           <Left>
             <Icon name="md-person-add" size={30} style={{ paddingLeft: 10 }} />
           </Left>
-          <Body>
+          <Body style={styles.androidHeaderTitle}>
             <Text>saikham</Text>
           </Body>
           <Right>
@@ -265,6 +265,20 @@ const styles = {
   containerStyle: {
     flex: 1,
     backgroundColor: "white"
+  },
+  androidHeader: {
+    ...Platform.select({
+      android: {
+        backgroundColor: "white"
+      }
+    })
+  },
+  androidHeaderTitle: {
+    ...Platform.select({
+      android: {
+        alignItems: "flex-end"
+      }
+    })
   }
 };
 

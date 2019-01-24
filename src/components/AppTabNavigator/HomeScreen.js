@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, Platform, StatusBar } from "react-native";
 import Icon from "react-native-vector-icons/Ionicons";
 import {
   Container,
@@ -23,11 +23,11 @@ class HomeScreen extends Component {
   render() {
     return (
       <Container style={styles.containerStyle}>
-        <Header>
+        <Header style={styles.androidHeader}>
           <Left>
             <Icon name="ios-camera" size={30} style={{ paddingLeft: 10 }} />
           </Left>
-          <Body>
+          <Body style={styles.androidHeaderTitle}>
             <Text>Instagram</Text>
           </Body>
           <Right>
@@ -124,6 +124,20 @@ const styles = StyleSheet.create({
   containerStyle: {
     flex: 1,
     backgroundColor: "white"
+  },
+  androidHeader: {
+    ...Platform.select({
+      android: {
+        backgroundColor: "white"
+      }
+    })
+  },
+  androidHeaderTitle: {
+    ...Platform.select({
+      android: {
+        alignItems: "flex-end"
+      }
+    })
   }
 });
 
