@@ -41,3 +41,7 @@ $ react-native run-android
 ## Running on Device
 
 https://facebook.github.io/react-native/docs/running-on-device-ios.html#content
+
+## License
+
+This project is licensed under Unlicense license. This license does not require you to take the license with you to your project.
